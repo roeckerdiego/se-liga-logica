@@ -1,0 +1,1 @@
+/home/codespace/.python/current/bin/python /workspaces/se-liga-logica/preco.py
