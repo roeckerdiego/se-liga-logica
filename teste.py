@@ -44,7 +44,6 @@ def listar_produtos():
     print("--------------------------------------------\n")
 
 def calcular_idade():
-    """Calcula a idade de uma pessoa pedindo o ano de nascimento."""
     print("\n--- 1. Calcular Idade ---")
     while True:
         try:
@@ -64,12 +63,11 @@ def calcular_idade():
             print("Entrada inválida. Por favor, digite um número inteiro.")
 
 def calcular_preco_compra():
-    """Calcula o preço total da compra baseado no preço unitário e quantidade."""
     print("\n--- 2. Calcular Preço da Compra ---")
     
     while True:
         try:
-            preco_unitario = float(input("Digite o preço unitário do item (R$): "))
+            preco_unitario = float(input("Digite o preço de cada produto comprado (R$): "))
             if preco_unitario < 0:
                 print("O preço unitário não pode ser negativo.")
                 continue
@@ -79,7 +77,7 @@ def calcular_preco_compra():
             
     while True:
         try:
-            quantidade = int(input("Digite a quantidade de itens comprados: "))
+            quantidade = int(input("Digite quantos produtos você comprou: "))
             if quantidade <= 0:
                 print("A quantidade deve ser um número inteiro positivo.")
                 continue
@@ -100,7 +98,7 @@ def menu():
     """Função principal que exibe o menu solicitado."""
     while True:
         print("\n===============================")
-        print("     menu do meu programa    ")
+        print(" menu do meu programa se-liga    ")
         print("===============================")
         print("1 - Calcular Idade")
         print("2 - Calcular Preço da Compra")
@@ -119,6 +117,5 @@ def menu():
         else:
             print("Erro, você tem que escolher outras opçoẽs para continuar o programa.")
 
-# Executa o menu quando o script é iniciado
 if __name__ == "__main__":
     menu()
